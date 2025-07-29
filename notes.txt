@@ -41,3 +41,11 @@ select label node > inspector > theme overrides > font sizes > 36 (moi -> multip
 select texture rect node > inspector > stretch mode > keep aspect centered (pas de distorsion de l'image & centre l'image)
 
 Panel container node remplace le panel node (panel container size s'adapte au contenu dans le container cad si il y a bcp de content alors le panel container sera plus grand)
+
+margin container node > inspector > theme overrides > constants > (grid container size + margin)
+
+explorateur fichier godot > créer nouveau > ressource > theme
+
+au niveau du terminal > clique sur la pipette > clique sur label (par exemple) > font size > toujours cliquer sur le "+" pour pouvoir modifier
+
+project > project settings > Advanced settings > GUI > theme > custom > load our_theme

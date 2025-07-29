@@ -20,13 +20,17 @@ metadata/_edit_lock_ = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-offset_left = 1767.0
-offset_top = 17.0
-offset_right = 1883.0
-offset_bottom = 121.0
+offset_left = 1754.0
+offset_top = 10.0
+offset_right = 1900.0
+offset_bottom = 144.0
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
 
 [node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
 layout_mode = 2
@@ -40,7 +44,6 @@ stretch_mode = 5
 
 [node name="FlashLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 36
 text = "100"
 
 [node name="BarrelIcon" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
