@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk6u11c6ogixi"]
+
+[ext_resource type="Texture2D" uid="uid://dbkvewlhcrrhp" path="res://images/backdrop.png" id="1_yp6vb"]
+[ext_resource type="Texture2D" uid="uid://c43nyufs52jyh" path="res://images/flash.png" id="2_uaaov"]
+[ext_resource type="Texture2D" uid="uid://ceixgptavgth2" path="res://images/barrel.png" id="3_vnqb8"]
+[ext_resource type="Texture2D" uid="uid://nn84brgqxeo6" path="res://images/settings.png" id="4_ca1lm"]
+
+[node name="TutoUi" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(578, 326)
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.45098)
+position = Vector2(592, 343)
+texture = ExtResource("1_yp6vb")
+metadata/_edit_lock_ = true
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 999.0
+offset_top = 6.0
+offset_right = 1127.0
+offset_bottom = 219.0
+
+[node name="Flash" type="Sprite2D" parent="."]
+position = Vector2(1051, 38)
+scale = Vector2(0.100586, 0.0917969)
+texture = ExtResource("2_uaaov")
+
+[node name="Barrel" type="Sprite2D" parent="."]
+position = Vector2(1046, 101)
+scale = Vector2(0.104981, 0.0888672)
+texture = ExtResource("3_vnqb8")
+
+[node name="Settings" type="Sprite2D" parent="."]
+position = Vector2(1046, 174)
+scale = Vector2(0.118164, 0.0957031)
+texture = ExtResource("4_ca1lm")
+
+[node name="Lbl100" type="Label" parent="."]
+offset_left = 1088.0
+offset_top = 23.0
+offset_right = 1128.0
+offset_bottom = 46.0
+text = "100"
+
+[node name="Lbl1002" type="Label" parent="."]
+offset_left = 1090.0
+offset_top = 88.0
+offset_right = 1130.0
+offset_bottom = 111.0
+text = "100"
+
+[node name="Lbl1003" type="Label" parent="."]
+offset_left = 1091.0
+offset_top = 160.0
+offset_right = 1131.0
+offset_bottom = 183.0
+text = "100"
