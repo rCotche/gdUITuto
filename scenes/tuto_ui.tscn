@@ -8,52 +8,50 @@
 [node name="TutoUi" type="Node"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(578, 326)
+position = Vector2(950, 536)
 
 [node name="Backdrop" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.45098)
-position = Vector2(592, 343)
+position = Vector2(956, 514.25)
+scale = Vector2(1.61176, 1.44194)
 texture = ExtResource("1_yp6vb")
 metadata/_edit_lock_ = true
 
-[node name="Panel" type="Panel" parent="."]
-offset_left = 999.0
-offset_top = 6.0
-offset_right = 1127.0
-offset_bottom = 219.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Flash" type="Sprite2D" parent="."]
-position = Vector2(1051, 38)
-scale = Vector2(0.100586, 0.0917969)
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = 1742.0
+offset_top = 32.0
+offset_right = 1870.0
+offset_bottom = 245.0
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer"]
+offset_left = 1656.0
+offset_top = 271.0
+offset_right = 1696.0
+offset_bottom = 348.0
+columns = 2
+
+[node name="FlashIcon" type="TextureRect" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
 texture = ExtResource("2_uaaov")
 
-[node name="Barrel" type="Sprite2D" parent="."]
-position = Vector2(1046, 101)
-scale = Vector2(0.104981, 0.0888672)
+[node name="FlashLabel" type="Label" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="BarrelIcon" type="TextureRect" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
 texture = ExtResource("3_vnqb8")
 
-[node name="Settings" type="Sprite2D" parent="."]
-position = Vector2(1046, 174)
-scale = Vector2(0.118164, 0.0957031)
+[node name="BarrelLabel" type="Label" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="CogIcon" type="TextureRect" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
 texture = ExtResource("4_ca1lm")
 
-[node name="Lbl100" type="Label" parent="."]
-offset_left = 1088.0
-offset_top = 23.0
-offset_right = 1128.0
-offset_bottom = 46.0
-text = "100"
-
-[node name="Lbl1002" type="Label" parent="."]
-offset_left = 1090.0
-offset_top = 88.0
-offset_right = 1130.0
-offset_bottom = 111.0
-text = "100"
-
-[node name="Lbl1003" type="Label" parent="."]
-offset_left = 1091.0
-offset_top = 160.0
-offset_right = 1131.0
-offset_bottom = 183.0
+[node name="CogLabel" type="Label" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
 text = "100"

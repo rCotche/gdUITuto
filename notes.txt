@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=1_OFJLyqlXI
+
+node panel pour faire un background | moins de 4:00
+
+
+Responsive
+reference resolution
+En haut a gauche projet > projet settings > menu a gauche categ display > window > viewport width/height = reference resolution
+
+https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam
+
+1920 x 1080 == width x height
+
+add canvas layer node, move ui in canvas layer node (tous les parties de l'ui sont des anfant de canvas layer) | 7:01
+canvas layer not affected par camera movement
+
+add node grid container (containers work only with ui components [sprite fonctionne pas, label oui]) >
+move grid dans cavas layer en dessous de panel > move all other ui in grid container > remplace les sprite avec des texture rect node
+select grid container > inspector > columns > 2
+replace les nodes dans le bonne ordre dans la scene tree
+
+select texture rect node > inspector > expand mode > fitWidth (bien dans des hboxcontainers) > 
