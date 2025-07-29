@@ -19,4 +19,25 @@ move grid dans cavas layer en dessous de panel > move all other ui in grid conta
 select grid container > inspector > columns > 2
 replace les nodes dans le bonne ordre dans la scene tree
 
-select texture rect node > inspector > expand mode > fitWidth (bien dans des hboxcontainers) > 
+select texture rect node > inspector > expand mode > fitWidth (bien dans des hboxcontainers)
+***
+Hauteur ignorée
+Quand vous choisissez Fit Width, Godot ne tient plus compte de la taille originale (hauteur) de la Texture pour calculer la taille minimale du contrôle.
+
+Largeur minimale = hauteur courante
+Au lieu de ça, la largeur minimale du TextureRect est forcée à être égale à sa hauteur actuelle.
+
+Conséquence visuelle
+Le contrôle devient carré : largeur = hauteur, quelle que soit la taille de l’image source.
+
+Cas d’usage
+Dans un HBoxContainer, tous les enfants sont disposés horizontalement en fonction de leur taille minimale. Avec Fit Width, chaque icône reste à la hauteur du conteneur et voit sa largeur automatiquement ajustée à cette même valeur, garantissant un alignement propre et uniforme.
+
+En résumé, Expand Mode → Fit Width transforme chaque TextureRect en contrôle carré, de largeur égale à sa hauteur, ce qui est idéal pour des rangées d’icônes ou de boutons dans un HBoxContainer.
+***
+
+select label node > inspector > theme overrides > font sizes > 36 (moi -> multiple de 12) | 13:32
+
+select texture rect node > inspector > stretch mode > keep aspect centered (pas de distorsion de l'image & centre l'image)
+
+Panel container node remplace le panel node (panel container size s'adapte au contenu dans le container cad si il y a bcp de content alors le panel container sera plus grand)
