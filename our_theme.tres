@@ -1,7 +1,27 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://2gbmat8o2uup"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://2gbmat8o2uup"]
 
+[ext_resource type="Texture2D" uid="uid://cubej8ep5adl0" path="res://images/bigCadre.png" id="1_asvem"]
 [ext_resource type="FontFile" uid="uid://bmij7hpre2r61" path="res://font/Chango-Regular.ttf" id="1_tky41"]
+[ext_resource type="Texture2D" uid="uid://bqqfv8u6j32oq" path="res://images/cadre.png" id="2_g76yj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4pw1i"]
+texture = ExtResource("1_asvem")
+texture_margin_left = 96.0
+texture_margin_top = 96.0
+texture_margin_right = 96.0
+texture_margin_bottom = 96.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tky41"]
+texture = ExtResource("2_g76yj")
+texture_margin_left = 12.0
+texture_margin_top = 12.0
+texture_margin_right = 12.0
+texture_margin_bottom = 12.0
 
 [resource]
+BigPanelContainer/base_type = &"PanelContainer"
+BigPanelContainer/styles/panel = SubResource("StyleBoxTexture_4pw1i")
+HeaderLarge/font_sizes/font_size = 48
 Label/font_sizes/font_size = 36
 Label/fonts/font = ExtResource("1_tky41")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_tky41")

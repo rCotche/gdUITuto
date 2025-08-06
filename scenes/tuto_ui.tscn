@@ -19,49 +19,70 @@ metadata/_edit_lock_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-offset_left = 1754.0
-offset_top = 10.0
-offset_right = 1900.0
-offset_bottom = 144.0
+[node name="resource" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 1705.0
+offset_top = 14.0
+offset_right = 1892.0
+offset_bottom = 208.0
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/resource"]
 layout_mode = 2
 theme_override_constants/margin_left = 15
 theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/resource/MarginContainer"]
 layout_mode = 2
 columns = 2
 
-[node name="FlashIcon" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="FlashIcon" type="TextureRect" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("2_uaaov")
 expand_mode = 2
 stretch_mode = 5
 
-[node name="FlashLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="FlashLabel" type="Label" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 text = "100"
 
-[node name="BarrelIcon" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="BarrelIcon" type="TextureRect" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("3_vnqb8")
 expand_mode = 2
 stretch_mode = 5
 
-[node name="BarrelLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="BarrelLabel" type="Label" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 text = "100"
 
-[node name="CogIcon" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="CogIcon" type="TextureRect" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("4_ca1lm")
 expand_mode = 2
 stretch_mode = 5
 
-[node name="CogLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+[node name="CogLabel" type="Label" parent="CanvasLayer/resource/MarginContainer/GridContainer"]
 layout_mode = 2
 text = "100"
+
+[node name="dialogue" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 423.0
+offset_top = 202.0
+offset_right = 1517.0
+offset_bottom = 909.0
+theme_type_variation = &"BigPanelContainer"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/dialogue"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CanvasLayer/dialogue/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Mission"
+horizontal_alignment = 1
+
+[node name="ContentMission" type="Label" parent="CanvasLayer/dialogue/VBoxContainer"]
+layout_mode = 2
+text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+autowrap_mode = 2

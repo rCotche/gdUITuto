@@ -49,3 +49,26 @@ explorateur fichier godot > créer nouveau > ressource > theme
 au niveau du terminal > clique sur la pipette > clique sur label (par exemple) > font size > toujours cliquer sur le "+" pour pouvoir modifier
 
 project > project settings > Advanced settings > GUI > theme > custom > load our_theme
+
+
+Ajouter un TYPE
+click on our_theme.tres > en bas au niveau du terminal > click sur le "+" en haut à droite (niveau du terminal, à coté de type) > panel container
+2e tab en partant de la droite > toujours cliquer sur le "+" pour pouvoir modifier > select styleboxtexture > click on it
+inspector > select texture (une image pour le cadre, "frame wood" pour le mot clés) > texture margins (pour limiter le stretch | 21:55)
+
+DAILOGUE
+panel container > label mission > label content mission
+select label content mission > inspector > autowrap mode = word
+
+Pour créer un VARIANT (du panelContainer)
+click on our_theme.tres > en bas au niveau du terminal > click sur le "+" en haut à droite (niveau du terminal, à coté de type) > BigPanelContainer (c'est normal que l'editeur ne suggere rien) > add type
+1er tab en partant de la droite > toujours cliquer sur le "+" pour pouvoir modifier > select panelContainer > click on it
+2e tab en partant de la droite > toujours cliquer sur le "+" pour pouvoir modifier > select styleboxtexture > click on it
+inspector > select texture (une image pour le cadre, "frame wood" pour le mot clés) > texture margins
+select panel container (celui quon souhaite override le theme) > inspector > theme > type variation > select BigPaneContainer
+
+
+click on our_theme.tres > en bas au niveau du terminal > click sur le "+" en haut à droite (niveau du terminal, à coté de type) > select headerlarge
+4e tab > toujours cliquer sur le "+" pour pouvoir modifier > change font size to 48
+select label (celui quon souhaite override le theme) > inspector > theme > type variation > headerlarge
+inspector > horizontal alignement > center
