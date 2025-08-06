@@ -93,3 +93,11 @@ shrink center = place l'element au milieu
 
 TRICK
 add node control > inspector > control > layout > container sizing > expand
+
+41:00
+Anchor
+
+42:20
+
+Project > project settings > display > window > stretch > mode > canvas_item
+Project > project settings > display > window > stretch > keep > expand
