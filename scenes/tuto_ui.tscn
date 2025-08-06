@@ -67,10 +67,10 @@ layout_mode = 2
 text = "100"
 
 [node name="dialogue" type="PanelContainer" parent="CanvasLayer"]
-offset_left = 423.0
-offset_top = 202.0
-offset_right = 1517.0
-offset_bottom = 909.0
+offset_left = 351.0
+offset_top = 67.0
+offset_right = 1586.0
+offset_bottom = 850.0
 theme_type_variation = &"BigPanelContainer"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/dialogue"]
@@ -86,3 +86,30 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
 autowrap_mode = 2
+
+[node name="Spacer3" type="Control" parent="CanvasLayer/dialogue/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/dialogue/VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="CanvasLayer/dialogue/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OkButton" type="Button" parent="CanvasLayer/dialogue/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ok
+"
+
+[node name="CancelButton" type="Button" parent="CanvasLayer/dialogue/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[node name="Spacer2" type="Control" parent="CanvasLayer/dialogue/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3

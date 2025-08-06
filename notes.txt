@@ -72,3 +72,24 @@ click on our_theme.tres > en bas au niveau du terminal > click sur le "+" en hau
 4e tab > toujours cliquer sur le "+" pour pouvoir modifier > change font size to 48
 select label (celui quon souhaite override le theme) > inspector > theme > type variation > headerlarge
 inspector > horizontal alignement > center
+
+add button
+click on our_theme.tres > en bas au niveau du terminal > click sur la pipette > select button > change font > change font size
+2e tab en partant de la droite > toujours cliquer sur le "+" pour pouvoir modifier > select styleboxtexture > click on it
+Pour :
+- disabled
+- focus
+- hover
+- normal
+- pressed
+
+31:00
+select button (okButton) > inspector > control > layout > container sizing > 
+Expand (Prends toute la place existant, si 2elements ont expand enabled alors les 2 element auront la mm taille)
+stretch ratio (Prends la valeur des stretchratio de chaque element et fait la somme, eg : 1+1 = 2, puis prends la valeur des stretch ratio de chaque element puis la divise par la somme eg : 1/2)
+horizontal ( fonctionne UNIQUEMENT si expand est checked, how the button uses the size it has gotten):
+fill = prends toute la place
+shrink center = place l'element au milieu
+
+TRICK
+add node control > inspector > control > layout > container sizing > expand
